@@ -10,6 +10,7 @@ type Brain struct {
 	Hidden        int
 	Output        int
 	HiddenWeights *mat.Dense
+	OutputWeights *mat.Dense
 }
 
 func main() {
