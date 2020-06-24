@@ -14,7 +14,17 @@ type Brain struct {
 	OutputWeights *mat.Dense
 }
 
-//func (b Brain) Run(inputs )
+func (b Brain) Run(inputData []float64) mat.Matrix {
+	inputs := mat.NewDense(len(inputData), 1, inputData)
+
+	hiddenInputs := Dot(b.HiddenWeights, inputs)
+	hiddenOutputs := Apply(activation.Sigmoid, hiddenInputs)
+
+	finalInputs := Dot(b.OutputWeights, hiddenOutputs)
+	finalOutputs := Apply(activation.Sigmoid, finalInputs)
+
+	return finalOutputs
+}
 
 func main() {
 	fmt.Println("a")
