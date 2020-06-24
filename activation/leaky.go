@@ -1,6 +1,6 @@
 package activation
 
-func LeakyReLU(x float64) float64 {
+func LeakyReLU(r int, c int, x float64) float64 {
 	if x >= 0.0 {
 		return x
 	} else {

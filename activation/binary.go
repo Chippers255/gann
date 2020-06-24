@@ -1,6 +1,6 @@
 package activation
 
-func Binary(x float64) float64 {
+func Binary(r int, c int, x float64) float64 {
 	if x >= 1.0 {
 		return 1.0
 	} else {

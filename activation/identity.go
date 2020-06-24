@@ -1,5 +1,5 @@
 package activation
 
-func Identity(x float64) float64 {
+func Identity(r int, c int, x float64) float64 {
 	return x
 }
