@@ -5,4 +5,4 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Chippers255_gann&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=Chippers255_gann)
 
 # gann
-Using genetic algorithms to train neural networks
+Using genetic algorithms to train an individual with an ANN brain to perform tasks.
